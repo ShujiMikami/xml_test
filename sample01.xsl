@@ -19,8 +19,21 @@
         <td><xsl:value-of select="カテゴリ" /></td>
         <td><xsl:value-of select="要求or仕様" /></td>
         <td><xsl:value-of select="要求番号" /></td>
-        <td><xsl:value-of select="説明" /></td>
+        <td><xsl:value-of select="内容" /></td>
     </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td><xsl:text>理由</xsl:text></td>
+      <td><xsl:value-of select="理由" /></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td><xsl:text>説明</xsl:text></td>
+      <td><xsl:value-of select="説明" /></td>
+    </tr>
+
     </xsl:for-each>
     </table>
     </html>
