@@ -4,20 +4,22 @@
   <xsl:template match="/">
     <html>
     <head>
-    <title><xsl:text>ゲーム所持リスト</xsl:text></title>
+    <title><xsl:text>要求リスト</xsl:text></title>
     </head>
-    <h1><xsl:text>ゲーム所持リスト</xsl:text></h1>
+    <h1><xsl:text>要求リスト</xsl:text></h1>
     <table>
     <tr>
-        <th><xsl:text>ゲームタイトル</xsl:text></th>
-        <th><xsl:text>購入日</xsl:text></th>
-        <th><xsl:text>購入価格</xsl:text></th>
+        <th><xsl:text>カテゴリ</xsl:text></th>
+        <th><xsl:text>要求</xsl:text></th>
+        <th><xsl:text>要求番号/仕様番号</xsl:text></th>
+        <th><xsl:text>説明</xsl:text></th>
     </tr>
-    <xsl:for-each select="ゲーム所持リスト/ゲーム情報">
+    <xsl:for-each select="要求リスト/要求">
     <tr>
-        <td><xsl:value-of select="ゲームタイトル" /></td>
-        <td><xsl:value-of select="購入日" /></td>
-        <td><xsl:value-of select="購入価格" /></td>
+        <td><xsl:value-of select="カテゴリ" /></td>
+        <td><xsl:value-of select="要求or仕様" /></td>
+        <td><xsl:value-of select="要求番号" /></td>
+        <td><xsl:value-of select="説明" /></td>
     </tr>
     </xsl:for-each>
     </table>
