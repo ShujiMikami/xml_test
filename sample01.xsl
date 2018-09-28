@@ -19,15 +19,15 @@
         <xsl:for-each select="要求リスト/要求">
           <tr>
             <td rowspan="3"><xsl:value-of select="カテゴリ" /></td>
-            <td rowspan="3"><xsl:text>要求</xsl:text></td>
-            <td><xsl:value-of select="要求番号" /></td>
-            <td><xsl:value-of select="内容" /></td>
+            <td rowspan="3" bgcolor="lightgreen"><xsl:text>要求</xsl:text></td>
+            <td bgcolor="lightgreen"><xsl:value-of select="要求番号" /></td>
+            <td bgcolor="lightgreen"><xsl:value-of select="内容" /></td>
           </tr>
-          <tr>
+          <tr bgcolor="lightgreen">
             <td><xsl:text>理由</xsl:text></td>
             <td><xsl:value-of select="理由" /></td>
           </tr>
-          <tr>
+          <tr bgcolor="lightgreen">
             <td><xsl:text>説明</xsl:text></td>
             <td><xsl:value-of select="説明" /></td>
           </tr>
