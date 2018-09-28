@@ -9,7 +9,7 @@
       
       <h1><xsl:text>要求リスト</xsl:text></h1>
       
-      <table>
+      <table border="1">
         <tr>
           <th><xsl:text>カテゴリ</xsl:text></th>
           <th><xsl:text>要求</xsl:text></th>
