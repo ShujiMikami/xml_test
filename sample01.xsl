@@ -19,7 +19,7 @@
         <xsl:for-each select="要求リスト/要求">
           <tr>
             <td><xsl:value-of select="カテゴリ" /></td>
-            <td rowspan="3"><xsl:value-of select="要求or仕様" /></td>
+            <td rowspan="3"><xsl:text>要求</xsl:text></td>
             <td><xsl:value-of select="要求番号" /></td>
             <td><xsl:value-of select="内容" /></td>
           </tr>
