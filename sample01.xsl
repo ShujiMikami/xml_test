@@ -40,12 +40,11 @@
             </tr>
             <tr>
               <td></td>
-              <td><xsl:value-of select="仕様確認状況" /></td>
+              <td rowspan="2"><xsl:value-of select="仕様確認状況" /></td>
               <td><xsl:value-of select="仕様番号" /></td>
               <td><xsl:value-of select="内容" /></td>
             </tr>
             <tr>
-              <td></td>
               <td></td>
               <td><xsl:text>説明</xsl:text></td>
               <td><xsl:value-of select="説明" /></td>
